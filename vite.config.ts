@@ -4,11 +4,18 @@ import { defineConfig } from 'vite'
 import vue from '@vitejs/plugin-vue'
 
 export default defineConfig({
-    plugins: [vue()],
+    plugins: [vue({
+        template: {
+          compilerOptions: {
+            isCustomElement: (tag) => tag.includes('simple-sample')
+          }
+        }
+      })],
 
     histoire: {
         // Histoire config can also go here
     },
+    
     build: {
         lib: {
             entry: './src/main.ce.ts',
