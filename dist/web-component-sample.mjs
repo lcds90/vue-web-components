@@ -3455,6 +3455,9 @@ const Sn = (...e) => {
     },
     count: {
       type: Number
+    },
+    cursor: {
+      type: Boolean
     }
   },
   setup(e) {
@@ -3462,14 +3465,15 @@ const Sn = (...e) => {
       class: Mt(["px-6 py-3 rounded-md", {
         "bg-gray-200": e.color == null,
         "bg-green-200": e.color === "green",
-        "bg-red-200": e.color === "red"
+        "bg-red-200": e.color === "red",
+        "is-click": e.cursor
       }])
     }, [
       Kr(t.$slots, "default"),
       e.count != null ? (Tt(), fn("span", Gi, Ro(e.count), 1)) : di("", !0)
     ], 2));
   }
-}), Xi = `.bg-green-200{background:green}
+}), Xi = `.bg-green-200{background:green}.is-click{cursor:pointer}
 `, qi = (e, t) => {
   const s = e.__vccOpts || e;
   for (const [n, o] of t)

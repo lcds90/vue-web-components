@@ -6,6 +6,9 @@ defineProps({
   count: {
     type: Number,
   },
+  cursor: {
+    type: Boolean
+  }
 })
 </script>
 
@@ -16,6 +19,7 @@ defineProps({
       'bg-gray-200': color == null,
       'bg-green-200': color === 'green',
       'bg-red-200': color === 'red',
+      'is-click': cursor
     }"
   >
     <slot />
@@ -31,5 +35,9 @@ defineProps({
 <style>
 .bg-green-200 {
   background: green;
+}
+
+.is-click {
+  cursor: pointer;
 }
 </style>
