@@ -1,5 +1,5 @@
 import { defineCustomElement } from 'vue'
-import BaseButtonComponent from './BaseButton.ce.vue'
+import BaseButtonComponent from './BaseButton/BaseButton.ce.vue'
 
 const BaseButton = defineCustomElement(BaseButtonComponent)
 

@@ -32,12 +32,6 @@ defineProps({
   </button>
 </template>
 
-<style>
-.bg-green-200 {
-  background: green;
-}
-
-.is-click {
-  cursor: pointer;
-}
+<style lang="scss">
+@import './BaseButton.scss'
 </style>
