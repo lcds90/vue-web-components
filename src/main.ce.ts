@@ -1,7 +1,8 @@
 import { defineCustomElement } from 'vue'
-import BaseButtonComponent from './BaseButton/BaseButton.ce.vue'
+import Components from './components'
 import 'bulma/css/bulma.css'
+import { gsap } from 'gsap';
 
-const BaseButton = defineCustomElement(BaseButtonComponent)
-
-customElements.define('wc-base-button', BaseButton)
+Object.entries(Components).forEach(([key, component]) => {
+    customElements.define(`wc-${key}`, defineCustomElement(component))
+})

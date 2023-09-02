@@ -32,6 +32,8 @@ Fornecendo uma fundação sólida e eficiente para o desenvolvimento de componen
 ## Referências 📚
 - [📝 Tips to create Web components using Vue 3, TS, Vite](https://dev.to/nurlan_tl/tips-to-create-web-components-using-vue-3-ts-vite-3a7a)
 - [🎥 Coding Shorts: Vue 3.2 - Create Your Own Web Components](https://www.youtube.com/watch?v=1w24B1f1Rmo)
+- [Vue Docs - Web Components and Typescript](https://vuejs.org/guide/extras/web-components.html#web-components-and-typescript)
+- [Building Web Components with Vue 3.2](https://www.thisdot.co/blog/building-web-components-with-vue-3-2/)
 
 </details>
 

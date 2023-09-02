@@ -1,7 +1,11 @@
+<script setup lang="ts">
+import { BaseButton } from './components'
+</script>
+
 <template>
-    <div>Olar
-
-    <wc-base-button cursor color="red">teste</wc-base-button>
-
+    <div>Ol
+        <base-button>okay</base-button>
+    <wc-base-button cursor color="red">oie</wc-base-button>
+ss
     </div>
 </template>

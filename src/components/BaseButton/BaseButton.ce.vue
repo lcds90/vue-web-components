@@ -1,4 +1,7 @@
 <script setup lang="ts">
+import { gsap } from 'gsap';
+import { onMounted, ref, watchEffect } from 'vue';
+
 defineProps({
   color: {
     type: String,
@@ -11,10 +14,22 @@ defineProps({
     default: true
   }
 })
+
+const button = ref<HTMLElement>();
+
+watchEffect(() => {
+  console.log(button.value)
+
+  if (button.value) {
+    console.log(button.value)
+    gsap.from(button.value, { y: 150, opacity: 0 })
+  }
+})
 </script>
 
 <template>
   <button
+    ref="button"
     class="button px-4 py-3"
     :class="{
       'is-light': color == null,

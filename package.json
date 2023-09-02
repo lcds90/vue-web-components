@@ -3,17 +3,21 @@
   "version": "0.0.1",
   "type": "module",
   "private": true,
+  "typings": "./src/global.d.ts",
   "scripts": {
     "dev": "vite",
-    "build": "vite build",
+    "build": "vue-tsc --noEmit && vue-tsc --declaration --emitDeclarationOnly && vite build",
     "preview": "vite preview",
+    "watch": "watch 'npm run build' ./src",
     "story:dev": "histoire dev",
     "story:build": "histoire build",
     "story:preview": "histoire preview"
   },
   "dependencies": {
     "bulma": "^0.9.4",
-    "vue": "^3.2.47"
+    "gsap": "^3.12.2",
+    "vue": "^3.2.47",
+    "watch": "^1.0.2"
   },
   "devDependencies": {
     "@histoire/plugin-vue": "^0.16.1",
