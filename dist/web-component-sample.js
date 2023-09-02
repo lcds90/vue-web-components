@@ -3473,7 +3473,7 @@ const Sn = (...e) => {
       e.count != null ? (Tt(), fn("span", Gi, Ro(e.count), 1)) : di("", !0)
     ], 2));
   }
-}), Xi = `.bg-green-200{background:green}.is-click{cursor:pointer}
+}), Xi = `.bg-green-200{background:green}.is-click{cursor:pointer}.bg-gray-200{background:gray}
 `, qi = (e, t) => {
   const s = e.__vccOpts || e;
   for (const [n, o] of t)
