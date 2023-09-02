@@ -7,25 +7,26 @@ defineProps({
     type: Number,
   },
   cursor: {
-    type: Boolean
+    type: Boolean,
+    default: true
   }
 })
 </script>
 
 <template>
   <button
-    class="px-6 py-3 rounded-md"
+    class="button px-4 py-3"
     :class="{
-      'bg-gray-200': color == null,
-      'bg-green-200': color === 'green',
-      'bg-red-200': color === 'red',
-      'is-click': cursor
+      'is-light': color == null,
+      'is-success': color === 'green',
+      'is-danger': color === 'red',
+      'is-clickable': cursor
     }"
   >
     <slot />
     <span
       v-if="count != null"
-      class="text-xs ml-2 bg-white rounded-full px-1.5"
+      class="has-text-small mx-1 px-1 has-text-black"
     >
       {{ count }}
     </span>
@@ -33,5 +34,5 @@ defineProps({
 </template>
 
 <style lang="scss">
-@import './BaseButton.scss'
+@import 'bulma/css/bulma.css'
 </style>

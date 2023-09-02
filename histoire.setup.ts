@@ -1,6 +1,7 @@
-import './src/BaseButton/BaseButton.scss'
-
+import 'bulma/css/bulma.css'
 export function setupVue3({ app }) {
+  
+
   app.provide('test', 'hello')
   // app.use(...)
 }

@@ -12,6 +12,7 @@
     "story:preview": "histoire preview"
   },
   "dependencies": {
+    "bulma": "^0.9.4",
     "vue": "^3.2.47"
   },
   "devDependencies": {
