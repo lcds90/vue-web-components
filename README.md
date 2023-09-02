@@ -1,17 +1,26 @@
 # Estudo de Web Components 🚀
 
 ## Propósito do Repositório 🎯
-> Este repositório tem como objetivo ser um projeto base para a construção de Web Components.
+> Este repositório tem como objetivo ser um projeto base para a construção de Web Components. 😉
 
-Ele utiliza as bibliotecas
+📦 Ele utiliza as bibliotecas 📦
 - [Vue 3](https://vuejs.org/)
 - [Vite](https://vitejs.dev/)
 - [TypeScript](https://www.typescriptlang.org/)
 - [Histoire](https://histoire.dev/)
 
-Fornecendo uma fundação sólida e eficiente para o desenvolvimento de componentes web customizados e documentados para qualquer tipo de framework! 💫
+---
 
-## 
+<q>
+Fornecendo uma fundação sólida e eficiente para o desenvolvimento de componentes web customizados e documentados para qualquer tipo de framework! 💫
+</q>
+
+|  |  |  |
+|-------|------|-----------|
+| 📘 | **[Docs](https://lcds-vue-web-components-docs.vercel.app/)** | Link para a documentação. Utilizando Histoire. |
+| 🖥️ | **[App](https://lcds-vue-web-components-app.vercel.app/)** | Link que demonstra a utilização de Web Component em um ambiente real. |
+
+---
 
 <details>
 
@@ -19,11 +28,6 @@ Fornecendo uma fundação sólida e eficiente para o desenvolvimento de componen
 <h4 style="display: inline">Links Importantes e Informações Adicionais 🌐</h4>
 </summary>
 
-- [📘 Acesse o meu Histoire](https://lcds-vue-web-components-docs.vercel.app/)
-  - Este link o direcionará para uma ferramenta chamada Histoire. _Histoire é uma ferramenta para gerar aplicações de histórias (ou "livros"). Com ela, você pode criar narrativas interativas de forma organizada e intuitiva._
-
-- [🖥️ Acesse a utilização do web component](https://lcds-vue-web-components-app.vercel.app/)
-  - Este link leva você a uma página que demonstra a utilização de Web Components em um ambiente real.
 
 ## Referências 📚
 - [📝 Tips to create Web components using Vue 3, TS, Vite](https://dev.to/nurlan_tl/tips-to-create-web-components-using-vue-3-ts-vite-3a7a)
