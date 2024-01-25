@@ -3,21 +3,22 @@
 ## Propósito do Repositório 🎯
 > Este repositório tem como objetivo ser um projeto base para a construção de Web Components. 😉
 
+_Fornecendo uma fundação sólida e eficiente para o desenvolvimento de componentes web customizados e documentados para qualquer tipo de framework! 💫_
+
+---
+
 📦 Ele utiliza as bibliotecas 📦
 - [Vue 3](https://vuejs.org/)
 - [Vite](https://vitejs.dev/)
 - [TypeScript](https://www.typescriptlang.org/)
 - [Histoire](https://histoire.dev/)
 
+
 ---
 
-<q>
-Fornecendo uma fundação sólida e eficiente para o desenvolvimento de componentes web customizados e documentados para qualquer tipo de framework! 💫
-</q>
-
-|  |  |  |
+|  | Link | Descrição |
 |-------|------|-----------|
-| 📘 | **[Docs](https://lcds-vue-web-components-docs.vercel.app/)** | Link para a documentação. Utilizando Histoire. |
+| 📘 | **[Docs](https://lcds-vue-web-components-docs.vercel.app/)** | Link para a documentação, utilizando Histoire. |
 | 🖥️ | **[App](https://lcds-vue-web-components-app.vercel.app/)** | Link que demonstra a utilização de Web Component em um ambiente real. |
 
 ---

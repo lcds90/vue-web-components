@@ -8,6 +8,7 @@
     "start": "npm run story:dev & npm run dev",
     "dev": "vite",
     "build": "vite build",
+    "build:dev": "watch 'npm run build' ./src",
     "preview": "vite preview",
     "watch": "watch 'npm run build' ./src",
     "story:dev": "histoire dev",
@@ -18,6 +19,7 @@
     "bulma": "^0.9.4",
     "gsap": "^3.12.2",
     "vue": "^3.2.47",
+    "watch": "^1.0.2",
     "watch": "^1.0.2"
   },
   "devDependencies": {
