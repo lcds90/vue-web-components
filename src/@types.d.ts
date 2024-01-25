@@ -1,0 +1,1 @@
+export { MyButtonComponent, MyButtonInstance } from './components/BaseButton/Basebutton';

@@ -5,7 +5,8 @@ import vue from '@vitejs/plugin-vue'
 import { defaultColors } from 'histoire'
 
 export default defineConfig({
-  plugins: [vue({
+  plugins: [
+    vue({
     template: {
       compilerOptions: {
         isCustomElement: (tag) => tag.includes('wc-')

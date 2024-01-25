@@ -18,10 +18,9 @@ defineProps({
 const button = ref<HTMLElement>();
 
 watchEffect(() => {
-  console.log(button.value)
 
   if (button.value) {
-    console.log(button.value)
+
     gsap.from(button.value, { y: 150, opacity: 0 })
   }
 })
@@ -49,5 +48,5 @@ watchEffect(() => {
 </template>
 
 <style lang="scss">
-@import 'bulma/css/bulma.css'
+// @import 'bulma/css/bulma.css'
 </style>
