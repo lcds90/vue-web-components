@@ -24,21 +24,10 @@ export default defineConfig({
     }
   },
   histoire,
-/*   css: {
-    preprocessorOptions: {
-      scss: {
-        // adicionar css
-        additionalData: `
-          @import 'bulma/css/bulma.css';
-        `,
-      }
-    }
-  }, */
   define: {
     'process.env': process.env
   },
-  resolve:
-  {
+  resolve: {
     alias: {
       '@': path.resolve(__dirname, './src/lib'),
       "@locales": path.resolve(__dirname, './src/lib/locales')

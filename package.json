@@ -12,7 +12,9 @@
     "preview": "vite preview",
     "story:dev": "histoire dev",
     "story:build": "histoire build",
-    "story:preview": "histoire preview"
+    "story:preview": "histoire preview",
+    "test": "vitest",
+    "coverage": "vitest run --coverage"
   },
   "dependencies": {
     "bulma": "^0.9.4",
@@ -23,10 +25,13 @@
   "devDependencies": {
     "@histoire/plugin-vue": "^0.16.1",
     "@vitejs/plugin-vue": "^4.0.0",
+    "@vue/test-utils": "^2.4.4",
     "autoprefixer": "^10.4.7",
     "histoire": "^0.16.1",
+    "jsdom": "^24.0.0",
     "sass": "^1.66.1",
     "vite": "^4.3.0",
+    "vitest": "^1.2.2",
     "vue-tsc": "^1.8.8",
     "watch": "^1.0.2"
   }

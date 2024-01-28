@@ -11,9 +11,11 @@
                 "src/lib/locales"
             ]
         },
+        "types": [
+            "vitest/globals"
+        ]
     },
     "include": [
         "src",
-        "node_modules"
-    ]
+    ],
 }
