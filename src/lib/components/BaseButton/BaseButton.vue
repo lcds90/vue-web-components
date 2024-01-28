@@ -1,6 +1,7 @@
 <script setup lang="ts">
 import { gsap } from 'gsap';
 import { onMounted, ref, watchEffect } from 'vue';
+import { t } from '@locales'
 
 defineProps({
   color: {
@@ -38,6 +39,7 @@ watchEffect(() => {
     }"
   >
     <slot />
+    {{ t('teste') }}
     <span
       v-if="count != null"
       class="has-text-small mx-1 px-1 has-text-black"
@@ -46,7 +48,3 @@ watchEffect(() => {
     </span>
   </button>
 </template>
-
-<style lang="scss">
-// @import 'bulma/css/bulma.css'
-</style>

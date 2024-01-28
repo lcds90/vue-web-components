@@ -2,46 +2,42 @@
 
 import { defineConfig } from 'vite'
 import vue from '@vitejs/plugin-vue'
-import { defaultColors } from 'histoire'
+import path from 'path'
 
 export default defineConfig({
   plugins: [
     vue({
-    template: {
-      compilerOptions: {
-        isCustomElement: (tag) => tag.includes('wc-')
-      }
-    }
-  })],
-
-  histoire: {
-    // Histoire config can also go here
-    // LINK https://histoire.dev/reference/config.html
-    theme: {
-      title: 'Web Components',
-      logo: {
-        dark: './src/assets/logo.svg',
-        light: './src/assets/logo.svg',
-        square:  './src/assets/logo.svg'
+      template: {
+        compilerOptions: {
+          isCustomElement: (tag) => tag.includes('wc-')
+        }
       },
-      defaultColorScheme: 'dark',
-      colors: {
-        primary: defaultColors.purple,
-
-      }
-    },
-
-  },
-
+      customElement: true,
+    })],
   build: {
     lib: {
-      entry: './src/main.ce.ts',
-      name: 'web-component-sample',
+      entry: './src/lib/main.ts',
+      name: 'main',
       // the proper extensions will be added
-      fileName: 'web-component-sample'
+      fileName: 'main'
     }
   },
   define: {
     'process.env': process.env
+  },
+  css: {
+    preprocessorOptions: {
+      scss: {
+        // adicionar css
+        additionalData: `@import "bulma/css/bulma.css";`,
+        includePaths: ['node_modules']
+      }
+    }
+  },
+  resolve: {
+    alias: {
+      '@': path.resolve(__dirname, './src/lib'),
+      "@locales": path.resolve(__dirname, './src/lib/locales')
+    }
   }
 })

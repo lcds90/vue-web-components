@@ -1,3 +1,18 @@
 {
-    
+    "compilerOptions": {
+        "baseUrl": ".",
+        "esModuleInterop": true,
+        "resolveJsonModule": true,
+        "paths": {
+            "@/*": [
+                "src/lib/*"
+            ],
+            "@locales": [
+                "src/lib/locales"
+            ]
+        }
+    },
+    "include": [
+        "src"
+    ]
 }

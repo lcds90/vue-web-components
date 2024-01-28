@@ -1,7 +1,7 @@
 <script setup lang="ts">
 import { ref } from 'vue'
 import { logEvent } from 'histoire/client'
-import BaseButton from './BaseButton.ce.vue'
+import BaseButton from './BaseButton.vue'
 
 const text = ref('Botão')
 </script>

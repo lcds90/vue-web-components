@@ -1,4 +1,4 @@
-import BaseButton from './BaseButton/BaseButton.ce.vue'
+import BaseButton from './BaseButton/BaseButton.vue'
 
 export {
     BaseButton
