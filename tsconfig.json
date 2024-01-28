@@ -10,9 +10,10 @@
             "@locales": [
                 "src/lib/locales"
             ]
-        }
+        },
     },
     "include": [
-        "src"
+        "src",
+        "node_modules"
     ]
 }

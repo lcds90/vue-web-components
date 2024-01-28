@@ -3,6 +3,7 @@
 import { defineConfig } from 'vite'
 import vue from '@vitejs/plugin-vue'
 import path from 'path'
+import { histoire } from './src/lib/histoire.config'
 
 export default defineConfig({
   plugins: [
@@ -22,19 +23,22 @@ export default defineConfig({
       fileName: 'main'
     }
   },
-  define: {
-    'process.env': process.env
-  },
-  css: {
+  histoire,
+/*   css: {
     preprocessorOptions: {
       scss: {
         // adicionar css
-        additionalData: `@import "bulma/css/bulma.css";`,
-        includePaths: ['node_modules']
+        additionalData: `
+          @import 'bulma/css/bulma.css';
+        `,
       }
     }
+  }, */
+  define: {
+    'process.env': process.env
   },
-  resolve: {
+  resolve:
+  {
     alias: {
       '@': path.resolve(__dirname, './src/lib'),
       "@locales": path.resolve(__dirname, './src/lib/locales')

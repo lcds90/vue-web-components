@@ -48,3 +48,7 @@ watchEffect(() => {
     </span>
   </button>
 </template>
+
+<style lang="scss">
+@import 'bulma/css/bulma.css'
+</style>

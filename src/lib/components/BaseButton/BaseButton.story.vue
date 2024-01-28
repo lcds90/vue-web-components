@@ -1,7 +1,6 @@
 <script setup lang="ts">
 import { ref } from 'vue'
 import { logEvent } from 'histoire/client'
-import BaseButton from './BaseButton.vue'
 
 const text = ref('Botão')
 </script>
@@ -9,21 +8,21 @@ const text = ref('Botão')
 <template>
   <Story title="Botão" :layout="{ type: 'grid', width: 200 }">
     <Variant title="default">
-      <BaseButton @click="logEvent('click', $event)">
+      <wc-base-button @click="logEvent('click', $event)">
       {{ text }}
-    </BaseButton>
+    </wc-base-button>
     </Variant>
 
     <Variant title="green">
-      <BaseButton color="green" @click="logEvent('click', $event)">
+      <wc-base-button color="green" @click="logEvent('click', $event)">
       {{ text }}
-    </BaseButton>
+    </wc-base-button>
     </Variant>
 
     <Variant title="red">
-      <BaseButton color="red" @click="logEvent('click', $event)">
+      <wc-base-button color="red" @click="logEvent('click', $event)">
       {{ text }}
-    </BaseButton>
+    </wc-base-button>
     </Variant>
 
     <template #controls>

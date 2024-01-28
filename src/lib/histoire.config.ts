@@ -1,16 +1,16 @@
 import { defaultColors, defineConfig } from 'histoire'
 import { HstVue } from '@histoire/plugin-vue'
 
-export default defineConfig({
+export const histoire = defineConfig({
   plugins: [HstVue()],
-  setupFile: 'histoire.setup.ts',
+  setupFile: '/src/lib/histoire.setup.ts',
   // LINK https://histoire.dev/reference/config.html
   theme: {
     title: 'Web Components',
     logo: {
-      dark: './src/assets/logo.svg',
-      light: './src/assets/logo.svg',
-      square: './src/assets/logo.svg'
+      dark: '@/assets/logo.svg',
+      light: '@/assets/logo.svg',
+      square: '@/assets/logo.svg'
     },
     defaultColorScheme: 'dark',
     colors: {
