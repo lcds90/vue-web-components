@@ -1,1 +1,1 @@
-export { MyButtonComponent, MyButtonInstance } from './components/BaseButton/Basebutton';
+export { MyButtonComponent, MyButtonInstance } from './components/atoms/Button/Button';

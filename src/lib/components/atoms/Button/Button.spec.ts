@@ -1,10 +1,10 @@
 import { mount } from '@vue/test-utils';
-import BaseButton from './BaseButton.vue';
+import Button from './Button.vue';
 
 describe('mount component', async () => {
-	expect(BaseButton).toBeTruthy();
+	expect(Button).toBeTruthy();
 
-	const wrapper = mount(BaseButton, {
+	const wrapper = mount(Button, {
 		props: {
 			count: 4,
 		},
@@ -12,5 +12,6 @@ describe('mount component', async () => {
 
 	it('should contain test 4', () => {
 		expect(wrapper.text()).toContain('test 4');
-	});
+    });
+    
 });

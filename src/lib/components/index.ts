@@ -1,9 +1,11 @@
-import BaseButton from './BaseButton/BaseButton.vue'
-
+import Button from './atoms/Button/Button.vue'
+import Hero from './organisms/Hero/Hero.vue';
 export {
-    BaseButton
+    Button,
+    Hero,
 }
 
 export default {
-    'base-button': BaseButton,
+    'button': Button,
+    'hero': Hero
 }

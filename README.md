@@ -12,6 +12,7 @@ _Fornecendo uma fundação sólida e eficiente para o desenvolvimento de compone
 - [Vite](https://vitejs.dev/)
 - [TypeScript](https://www.typescriptlang.org/)
 - [Histoire](https://histoire.dev/)
+- [Vitest](https://vitest.dev/)
 
 
 ---

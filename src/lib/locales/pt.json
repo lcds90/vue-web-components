@@ -1,3 +1,12 @@
 {
-    "teste": "teste"
+    "groups": {
+        "atoms": "Atomos",
+        "organisms": "Organismos"
+    },
+    "button": {
+        "title": "Botão"
+    },
+    "hero": {
+        "title": "Hero"
+    }
 }

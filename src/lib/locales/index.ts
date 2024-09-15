@@ -1,11 +1,9 @@
 import { createI18n } from "vue-i18n";
 import en from './en.json'
-import es from './es.json'
 import pt from './pt.json'
 
 const messages = {
     en,
-    es,
     pt,
 }
 
@@ -14,7 +12,6 @@ const getLocale = (language: string) => {
 }
 
 const i18n = createI18n({
-    locale: getLocale(navigator.language),
     fallbackLocale: 'pt',
     messages,
 })
