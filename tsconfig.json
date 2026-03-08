@@ -12,10 +12,14 @@
             ]
         },
         "types": [
-            "vitest/globals"
+            "vitest/globals",
+            "src/global.d.ts"
         ]
     },
     "include": [
         "src",
     ],
+    "exclude": [
+        "node_modules",
+    ]
 }

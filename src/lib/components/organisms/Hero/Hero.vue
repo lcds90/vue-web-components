@@ -1,4 +1,5 @@
 <script setup lang="ts">
+	import { Types, Sizes } from '@/global';
 	import { gsap } from 'gsap';
 	import { computed } from 'vue';
 	import { ref, toRefs, watchEffect } from 'vue';
@@ -8,7 +9,6 @@
 		subtitle?: string;
 		type?: Types;
 		size?: Sizes;
-		
 	}
 
 	const hero = ref<HTMLElement>();

@@ -1,11 +1,10 @@
-import Button from './atoms/Button/Button.vue'
+import Button from './atoms/Button/Button.vue';
 import Hero from './organisms/Hero/Hero.vue';
-export {
-    Button,
-    Hero,
-}
+import Navbar from './organisms/Navbar/Navbar.vue';
+export { Button, Hero, Navbar };
 
-export default {
-    'button': Button,
-    'hero': Hero
-}
+export const components = {
+	button: Button,
+	hero: Hero,
+	navbar: Navbar,
+};

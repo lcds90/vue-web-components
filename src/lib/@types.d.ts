@@ -1,1 +1,0 @@
-export { MyButtonComponent, MyButtonInstance } from './components/atoms/Button/Button';

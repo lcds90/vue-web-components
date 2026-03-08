@@ -1,6 +1,6 @@
 <script setup lang="ts">
 	import { gsap } from 'gsap';
-	import { onMounted, ref, watchEffect } from 'vue';
+	import { ref, watchEffect } from 'vue';
 
 	interface Props {
 		tag?: string;
